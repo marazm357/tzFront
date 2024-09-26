@@ -27,6 +27,8 @@ function setProgress(value) {
 }
 
 let intervalId
+
+// Сначала думал что второй пункт должен выглядеть так, но по итогу нет), сделал с учетом тз, это оставил для памяти
 // function toggleAnimation() {
 //   if (animateToggle.checked) {
 //     let value = 1
