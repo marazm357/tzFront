@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Block Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="progress-container">
+        <br>
+        <svg id="progress-circle" width="200" height="200">
+            <circle id="progress-bg" cx="100" cy="100" r="90" stroke="#e6e6e6" stroke-width="10" fill="none"></circle>
+            <circle id="progress-fg" cx="100" cy="100" r="90" stroke="#005cff" stroke-width="10" fill="none" stroke-dasharray="565.48" stroke-dashoffset="565.48"></circle>
+        </svg>
+        <div id="controls">
+            <div class="controls-btn">
+                <input type="number" id="valueInput" min="0" max="100" placeholder="(0-100)">
+                <div class="switch-btn-title-value">Value</div>
+            </div>
+            <div class="switch-btn" id="animate-switch-btn">
+                <input type="checkbox" id="animateToggle">
+                <div class="switch-btn-title">Animate</div>
+            </div>
+            <div class="switch-btn" id="hide-switch-btn">
+                <input type="checkbox" id="hideToggle">
+                <div class="switch-btn-title">Hide</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
